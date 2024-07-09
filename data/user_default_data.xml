@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="user_default_1" model="res.users">
+            <field name="name">Nasrat System Development</field>
+            <field name="login">nasrat</field>
+            <field name="email">nasrat@gmail.com</field>
+        </record>
+
+        <record id="user_default_2" model="res.users">
+            <field name="name">transaction_manager</field>
+            <field name="login">tmanager</field>
+            <field name="email">tm@gmail.com</field>
+        </record>
+
+        <record id="user_default_3" model="res.users">
+            <field name="name">Adjustments Manager</field>
+            <field name="login">adjustment_manager</field>
+            <field name="email">adm@gmail.com</field>
+        </record>
+
+        <record id="user_default_4" model="res.users">
+            <field name="name"> Manager of goods registration</field>
+            <field name="login">goods_manager</field>
+            <field name="email">wm@gmail.com</field>
+        </record>
+
+         <record id="user_default_5" model="res.users">
+            <field name="name">Report Manager</field>
+            <field name="login">report_manager</field>
+            <field name="email">gm@gmail.com</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,10 @@
+<odoo>
+    <record model="ir.module.category" id="Nasrat_inventory_category">
+        <field name="name">Nasrat Inventory</field>
+    </record>
+
+    <record id="Transaction_manager_group" model="res.groups">
+        <field name="name">Transaction Manager group</field>
+        <field name="category_id" ref="Nasrat_inventory_category"/>
+    </record>
+</odoo>

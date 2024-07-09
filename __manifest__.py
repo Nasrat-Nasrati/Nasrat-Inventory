@@ -12,9 +12,21 @@
     'author': 'Nasrat Nasrati',
     'website': 'https://www.example.com',
     'depends': ['stock'],
-    'data': [ ],
+    'data': [
+        'data/user_default_data.xml',
+        'security/user_category.xml',
+
+    ],
     'installable': True,
     'application': True,
     'auto_install': False,
     'license': 'LGPL-3',
+    'qweb': [
+        'static/src/xml/user_menu.xml',
+    ],
+    'assets': {
+        'web.assets_backend': [
+            'Nasrat-Inventory/static/src/js/extended_user_menu.js',
+        ],
+    }
 }
