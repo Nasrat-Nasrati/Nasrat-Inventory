@@ -15,6 +15,7 @@
     'data': [
         'data/user_default_data.xml',
         'security/user_category.xml',
+        'security/ir.model.access.csv',
 
     ],
     'installable': True,

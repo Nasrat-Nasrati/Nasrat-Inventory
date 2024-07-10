@@ -1,10 +1,28 @@
 <odoo>
-    <record model="ir.module.category" id="Nasrat_inventory_category">
-        <field name="name">Nasrat Inventory</field>
-    </record>
+
 
     <record id="Transaction_manager_group" model="res.groups">
-        <field name="name">Transaction Manager group</field>
-        <field name="category_id" ref="Nasrat_inventory_category"/>
+        <field name="name">Goods Manager</field>
+        <field name="category_id" ref="base.module_category_inventory_inventory"/>
     </record>
+
+    <!--    this user groups just can access to this specific menu-->
+
+
+<!--    <record model="ir.ui.menu" id="stock.menu_stock_root">-->
+<!--        <field name="groups_id" eval="[(4, ref('Transaction_manager_group'))]"/>-->
+<!--    </record>-->
+
+    <record id="goods_manager_product_template" model="ir.rule">
+        <field name="name">Goods Manager Product Template Role</field>
+        <field name="model_id" ref="stock.model_product_template"/>
+        <field name="domain_force">[(1,'=',1)]</field>
+        <field name="groups" eval="[(4, ref('Transaction_manager_group'))]"/>
+        <field name="perm_create" eval="1"/>
+        <field name="perm_write" eval="1"/>
+        <field name="perm_unlink" eval="1"/>
+        <field name="perm_read" eval="1"/>
+    </record>
+
+
 </odoo>
